@@ -1,0 +1,66 @@
+var myString: string = "hello world !!!";
+
+let Superman: boolean = true;
+
+Superman = convertirClark();
+
+function convertirClark() {
+  return false;
+}
+
+// if (Superman) console.log("si");
+// else console.log("no");
+
+let villanos: string[] = ["bla", "bla"];
+
+type Heroes = {
+  name: string;
+  edad: number;
+  poderes: string[];
+  getNombre: () => string;
+};
+
+let flash: Heroes = {
+  name: "barry",
+  edad: 22,
+  poderes: ["rapidez", "viajes en el tiempo"],
+  getNombre() {
+    return this.name;
+  },
+};
+
+// console.log(flash);
+interface Xmen {
+  nombre: string;
+  poder: string;
+}
+
+function enviar(xmen: { nombre: string }) {
+  console.log("Enviando a " + xmen.nombre);
+}
+
+function cuartel(xmen: { nombre: string }) {
+  console.log("Encuartelando a " + xmen.nombre);
+}
+
+let spiderman: Xmen = {
+  nombre: "piter",
+  poder: "trepamuros",
+};
+
+// enviar(spiderman);
+
+//constructores en las clases
+class Avenger {
+  nombre: string = "";
+  equipo: any = undefined;
+
+  constructor(nombre: string, equipo: string) {
+    this.nombre = nombre;
+    this.equipo = equipo;
+  }
+}
+
+let antman: Avenger = new Avenger("scot", "delta");
+
+console.log(antman);

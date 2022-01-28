@@ -1,0 +1,40 @@
+var myString = "hello world !!!";
+var Superman = true;
+Superman = convertirClark();
+function convertirClark() {
+    return false;
+}
+// if (Superman) console.log("si");
+// else console.log("no");
+var villanos = ["bla", "bla"];
+var flash = {
+    name: "barry",
+    edad: 22,
+    poderes: ["rapidez", "viajes en el tiempo"],
+    getNombre: function () {
+        return this.name;
+    }
+};
+function enviar(xmen) {
+    console.log("Enviando a " + xmen.nombre);
+}
+function cuartel(xmen) {
+    console.log("Encuartelando a " + xmen.nombre);
+}
+var spiderman = {
+    nombre: "piter",
+    poder: "trepamuros"
+};
+// enviar(spiderman);
+//constructores en las clases
+var Avenger = /** @class */ (function () {
+    function Avenger(nombre, equipo) {
+        this.nombre = "";
+        this.equipo = undefined;
+        this.nombre = nombre;
+        this.equipo = equipo;
+    }
+    return Avenger;
+}());
+var antman = new Avenger("scot", "delta");
+console.log(antman);
